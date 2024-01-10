@@ -8,6 +8,10 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 
+  <!--UNICONS-->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+
   <!--Font Awesome-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
@@ -15,6 +19,12 @@
 
   <!--CSS-->
   <link rel="stylesheet" href="asset/css/style.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
 </head>
 
 <body>
@@ -30,7 +40,7 @@
       </div>
       <ul class="nav-links" id="menu-list">
         <li><a href="#">Beranda</a></li>
-        <li><a href="#">Tentang Kami</a></li>
+        <li><a href="#tentang-kami">Tentang Kami</a></li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
             aria-expanded="false">Layanan
@@ -41,7 +51,10 @@
             <li><a class="dropdown-item" href="#">Warehousing</a></li>
           </ul>
         </li>
-        <li><a href="#">Kontak</a></li>
+        <li><a href="#kontak-kami">Kontak</a></li>
+        <li><a href="#" style="color: red;">ID</a></li>
+        <li>|</li>
+        <li><a href="#">EN</a></li>
       </ul>
     </div>
   </nav>
@@ -54,14 +67,14 @@
         <img src="asset/slider/woman-safety-equipment-working.jpg" class="d-block w-100" alt="..." />
         <div class="image-overlay"></div>
         <div class="carousel-caption">
-          <h1>SOLUSI SEMUA KEBUTUHAN LOGISTIK ANDA</h1>
+          <h1 class="animate__animated animate__fadeInUp">SOLUSI SEMUA KEBUTUHAN LOGISTIK ANDA</h1>
         </div>
       </div>
       <div class="carousel-item">
         <img src="asset/slider/6-Jenis-Layanan-Logistik-scaled.png" class="d-block w-100" alt="..." />
         <div class="image-overlay"></div>
         <div class="carousel-caption">
-          <h1>FREIGHT FORWARDING</h1>
+          <h1 class="animate__animated animate__fadeInUp">FREIGHT FORWARDING</h1>
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -75,8 +88,9 @@
     </div>
 
     <!--Card CONTENT-->
+    <div class="animate__animated animate__fadeInUp">
     <div class="d-flex justify-content-center">
-      <div class="card mx-3" style="width: 27rem; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);">
+      <div class="card mx-3" style="width: 25rem; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);">
         <img src="asset/card/depo.jpeg" class="card-img-top" alt="..." style="height: 215px;">
         <div class="card-body">
           <h5 class="card-title" style="text-align: center; font-weight: 900;">Depo Container</h5>
@@ -89,25 +103,25 @@
       </div>
 
 
-      <div class="card mx-3" style="width: 27rem; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);">
+      <div class="card mx-3" style="width: 25rem; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);">
         <img src="asset/card/trucking (1).png" class="card-img-top" alt="..." style="height: 215px;">
         <div class="card-body">
           <h5 class="card-title" style="text-align: center; font-weight: 900;">Trucking</h5>
           <p class="card-text" style="margin-top: 10px;">Padi Express Indonesia menyediakan berbagai armada transportasi
             darat untuk pengiriman logistik domestik ke seluruh Indonesia.</p>
-          <div class="text-center" style="margin-top: 65px;">
+          <div class="text-center" style="margin-top: 43px;">
             <a href="#" class="btn btn-primary">Jelajahi Lebih Lanjut</a>
           </div>
         </div>
       </div>
 
-      <div class="card mx-3" style="width: 27rem; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);">
+      <div class="card mx-3" style="width: 25rem; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);">
         <img src="asset/card/warehouse.png" class="card-img-top" alt="..." style="height: 215px;">
         <div class="card-body">
           <h5 class="card-title" style="text-align: center; font-weight: 900;">Warehousing</h5>
           <p class="card-text">Dengan kapasitas gudang mencapai 150,000 m² yang tersebar di beberapa lokasi strategis,
             kami siap mengakomodasi semua kebutuhan pergudangan bisnis Anda.</p>
-          <div class="text-center" style="margin-top: 40px;">
+          <div class="text-center" style="margin-top: 45px;">
             <a href="#" class="btn btn-primary">Jelajahi Lebih Lanjut</a>
           </div>
         </div>
@@ -117,13 +131,311 @@
     <!-- Layanan-->
 
     <div class="layanan">
-      <h2 style="text-align: center; margin-top: 40px;">LAYANAN KAMI</h2>
+      <h2 style="text-align: center; margin-top: 40px; font-weight: 500; font-size: 40px">LAYANAN KAMI</h2>
     </div>
 
+    <div class="layanan-us" style="padding-top: 80px;">
+
+      <div class="d-flex justify-content-center">
+        <div class="card mx-3" style="width: 23rem; height: 35rem;">
+          <img src="asset/card pelayanan/icon3.png" class="card-img-top" alt="..." style="height: 215px;">
+          <div class="card-body custom-card">
+            <h5 class="card-title" style="text-align: center; font-weight: 900;">Freight Forwarding
+            </h5>
+            <p class="card-text" style="text-align: center;">Dengan mengombinasikan 20 tahun lebih pengalaman di bidang
+              logistik dan jaringan mitra terpercaya di seluruh dunia, kami berkomitmen memberikan solusi logistik
+              terbaik bagi bisnis ekspor maupun impor Anda melalui moda transportasi laut dan udara.</p>
+          </div>
+        </div>
+
+
+        <div class="card mx-3" style="width: 23rem;">
+          <img src="asset/card pelayanan/icon2.png" class="card-img-top" alt="..." style="height: 215px;">
+          <div class="card-body custom-card">
+            <h5 class="card-title" style="text-align: center; font-weight: 900;">Custom Brokerage</h5>
+            <p class="card-text" style="margin-top: 10px; text-align: center;">Tim custom broker berpengalaman kami siap
+              membantu Anda dalam segala pengurusan formalitas kepabeanan terkait impor dan ekspor ke berbagai negara.
+            </p>
+          </div>
+        </div>
+
+        <div class="card mx-3" style="width: 23rem;">
+          <img src="asset/card pelayanan/icon8.png" class="card-img-top" alt="..." style="height: 215px;">
+          <div class="card-body custom-card">
+            <h5 class="card-title" style="text-align: center; font-weight: 900;">Trucking</h5>
+            <p class="card-text" style="margin-top: 10px; text-align: center;">Kami menawarkan layanan manajemen
+              pelabuhan dan bongkar muat mulai dari pengelolaan dan perawatan pelabuhan, penyewaan kapal, penyimpanan
+              dan pengiriman barang, hingga bongkar muat kargo atau barang baik dari kapal ke dermaga maupun sebaliknya.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <div class="layanan-us" style="padding-top: 80px;">
+
+      <div class="d-flex justify-content-center">
+        <div class="card mx-3" style="width: 23rem; height: 35rem;">
+          <img src="asset/card pelayanan/icon3.png" class="card-img-top" alt="..." style="height: 215px;">
+          <div class="card-body custom-card">
+            <h5 class="card-title" style="text-align: center; font-weight: 900;">Freight Forwarding
+            </h5>
+            <p class="card-text" style="text-align: center;">Dengan mengombinasikan 20 tahun lebih pengalaman di bidang
+              logistik dan jaringan mitra terpercaya di seluruh dunia, kami berkomitmen memberikan solusi logistik
+              terbaik bagi bisnis ekspor maupun impor Anda melalui moda transportasi laut dan udara.</p>
+          </div>
+        </div>
+
+
+        <div class="card mx-3" style="width: 23rem;">
+          <img src="asset/card pelayanan/icon2.png" class="card-img-top" alt="..." style="height: 215px;">
+          <div class="card-body custom-card">
+            <h5 class="card-title" style="text-align: center; font-weight: 900;">Custom Brokerage</h5>
+            <p class="card-text" style="margin-top: 10px; text-align: center;">Tim custom broker berpengalaman kami siap
+              membantu Anda dalam segala pengurusan formalitas kepabeanan terkait impor dan ekspor ke berbagai negara.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--Tentang Kami-->
+
+    <div class="about-us" id="tentang-kami">
+      <img src="asset/bg/location1.png" class="rounded float-end" alt="...">
+    </div>
+
+    <div class="about-text">
+      <h1>Tentang Kami</h1>
+    </div>
+
+
+    <div class="container about-section">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="about-content">
+            <h2>Selamat datang di Perusahaan Kami</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+            <div class="social_icons">
+              <a href="https://www.instagram.com/firdigunawan10/" target="_blank">
+                <div class="icon"><i class="uil uil-instagram"></i></div>
+              </a>
+              <a href="https://www.linkedin.com/in/firdi-gunawan-92aa52254/" target="_blank">
+                <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
+              </a>
+              <a href="https://www.facebook.com/firdi.gunawan.90?locale=id_ID" target="_blank">
+                <div class="icon"><i class="uil uil-facebook-f"></i></div>
+              </a>
+              <a href="https://github.com/firdigunawan" target="_blank">
+                <div class="icon"><i class="fa-brands fa-whatsapp"></i></div>
+              </a>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="about-image-fluis text-md-right">
+            <img src="asset/logo/logo padiexpres.png" class="rounded" alt="...">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="client">
+      <h3>KLIEN KAMI</h3>
+      <h2>MEREKA YANG MENGEMBANGKAN BISNISNYA BERSAMA</h2>
+    </div>
+
+    <div class="brand-carousel section-padding owl-carousel">
+      <div class="single-logo">
+        <img src="asset/logo/logo padiexpres.png" alt="">
+      </div>
+      <div class="single-logo">
+        <img src="asset/logo/logo padiexpres.png" alt="">
+      </div>
+      <div class="single-logo">
+        <img src="asset/logo/logo padiexpres.png" alt="">
+      </div>
+      <div class="single-logo">
+        <img src="asset/logo/logo padiexpres.png" alt="">
+      </div>
+      <div class="single-logo">
+        <img src="asset/logo/logo padiexpres.png" alt="">
+      </div>
+      <div class="single-logo">
+        <img src="asset/logo/logo padiexpres.png" alt="">
+      </div>
+    </div>
+
+    <!-- -------------- CONTACT BOX ---------------- -->
+
+    <div class="contact-us" id="kontak-kami">
+      <h3>HUBUNGI KAMI</h3>
+      <h2>KONSULTASIKAN KEBUTUHAN ANDA</h2>
+    </div>
+
+    <div class="kontak">
+      <div class="container contact-container">
+        <div class="row">
+          <!-- Contact Form -->
+          <div class="col-md-6">
+            <form action="#" method="post" id="contact-us-form">
+              <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+              </div>
+              <a href="#" class="btn btn-primary custom-btn">Send
+                <i class="fa-regular fa-paper-plane"></i>
+              </a>
+            </form>
+          </div>
+
+          <!-- Map -->
+          <div class="col-md-6">
+            <!-- Replace the 'your_map_embed_code' with your actual map embed code -->
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15867.64398535735!2d106.855549!3d-6.1426569!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f58505beb657%3A0xcfb828a7903b7456!2sPT.%20Makmur%20Berkat%20Solusi!5e0!3m2!1sid!2sid!4v1704793331475!5m2!1sid!2sid"
+              width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+              tabindex="0"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer-section">
+      <div class="container">
+        <div class="footer-cta pt-5 pb-5">
+          <div class="row">
+            <div class="col-xl-4 col-md-4 mb-30">
+              <div class="single-cta">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="cta-text">
+                  <h4>Find us</h4>
+                  <span>1010 Avenue, sw 54321, chandigarh</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-4 mb-30">
+              <div class="single-cta">
+                <i class="fas fa-phone"></i>
+                <div class="cta-text">
+                  <h4>Call us</h4>
+                  <span>+6281384555998</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-4 mb-30">
+              <div class="single-cta">
+                <i class="far fa-envelope-open"></i>
+                <div class="cta-text">
+                  <h4>Mail us</h4>
+                  <span>padiexpress@gmail.com</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-content pt-5 pb-5">
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 mb-50">
+              <div class="footer-widget">
+                <div class="footer-logo">
+                  <a href="index.html"><img src="asset/logo/logo padiexpres.png" class="img-fluid" alt="logo"></a>
+                </div>
+                <div class="footer-text">
+                  <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut
+                    consec tetur adipisicing
+                    elit,Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="footer-social-icon">
+                  <span>Follow us</span>
+                  <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                  <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                  <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Useful Links</h3>
+                </div>
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">about</a></li>
+                  <li><a href="#">services</a></li>
+                  <li><a href="#">portfolio</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Our Services</a></li>
+                  <li><a href="#">Expert Team</a></li>
+                  <li><a href="#">Contact us</a></li>
+                  <li><a href="#">Latest News</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Subscribe</h3>
+                </div>
+                <div class="footer-text mb-25">
+                  <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                </div>
+                <div class="subscribe-form">
+                  <form action="#">
+                    <input type="text" placeholder="Email Address">
+                    <button><i class="fab fa-telegram-plane"></i></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+              <div class="copyright-text">
+                <p>Copyright &copy; Firdi Gunawan, All Right Reserved <a
+                    href="https://firdigunawan.github.io/firdigunawan-portofolio/">Firdi</a></p>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+              <div class="footer-menu">
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Terms</a></li>
+                  <li><a href="#">Privacy</a></li>
+                  <li><a href="#">Policy</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"></script>
+
+    <script src="asset/JS/index.js"></script>
 </body>
 
 </html>
