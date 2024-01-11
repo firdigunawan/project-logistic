@@ -53,8 +53,9 @@ nav .nav-content {
 }
 
 .nav-links li a:hover {
-    color: #ca0000;
+    color: #ae0404;
 }
+
 
 
 :root {
@@ -63,6 +64,17 @@ nav .nav-content {
 
 .menu-icon {
     display: none;
+}
+
+.nav-item.dropdown:hover .dropdown-item {
+  background-color: #fbfbfb; /* Ganti yourColor dengan warna yang diinginkan */
+  color: #000000; /* Ganti yourTextColor dengan warna teks yang diinginkan */
+}
+
+/* atau jika ingin memberikan efek hanya pada item yang dihover */
+.nav-item.dropdown .dropdown-item:hover {
+  background-color: #ae0404; /* Ganti yourColor dengan warna yang diinginkan */
+  color: #ffffff; /* Ganti yourTextColor dengan warna teks yang diinginkan */
 }
 
 .carousel-item {
